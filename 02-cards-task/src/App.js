@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import './index.css';
+import { allGiftCards } from './data';
+import GiftCard from './GiftCard';
 
 function App() {
+  const [giftCards, setGiftCards] = useState(allGiftCards);
+  console.log(giftCards);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <h2>Cards &#38; Currencies</h2>
       </header>
-    </div>
+      <div className=' container'>
+        <div className='cards-list'>
+          {giftCards.map((giftCard) => {
+            return <GiftCard key={giftCard.id} {...giftCard} />;
+          })}
+        </div>
+      </div>
+    </>
   );
 }
 

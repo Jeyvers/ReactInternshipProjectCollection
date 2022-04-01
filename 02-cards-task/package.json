@@ -1,5 +1,5 @@
 {
-  "name": "redux",
+  "name": "02-cards-task",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

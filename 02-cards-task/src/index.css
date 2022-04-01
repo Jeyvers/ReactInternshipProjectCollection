@@ -1,13 +1,111 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+:root {
+  /* Typography */
+  --regular-font-weight: 300;
+  --semi-bold-font-weight: 600;
+  --bold-font-weight: 800;
+
+  --font-family: 'Nunito Sans', sans-serif;
+  --smallest-font-size: 0.55rem;
+  --smaller-font-size: 0.65rem;
+  --small-font-size: 0.725rem;
+  --normal-font-size: 14px;
+  --regular-font-size: 1.1rem;
+  --medium-font-size: 1.5rem;
+  --big-font-size: 2rem;
+
+  /* Colors */
+  --dark-blue: hsl(209, 23%, 22%);
+  --very-dark-blue: hsl(207, 26%, 17%);
+  --very-dark-blue-text: hsl(200, 15%, 8%);
+  --dark-gray: hsl(0, 0%, 52%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --box-shadow: 0 0 2px 0.2px rgba(71, 71, 71, 0.3);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  line-height: 1.5;
+}
+
+body {
+  font-size: var(--normal-font-size);
+  background: var(--very-dark-blue);
+  color: var(--white);
+  font-weight: var(--semi-bold-font-weight);
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  width: 90vw;
+}
+
+header {
+  padding: 1rem 0;
+  margin: 1rem 0;
+  text-align: center;
+  opacity: 0.6;
+}
+
+/* Cards Section */
+.cards-list {
+  width: 90vw;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1rem;
+  grid-row-gap: 2rem;
+}
+
+.card {
+  padding: 2rem;
+  max-width: 450px;
+  /* margin: 0 3rem; */
+  border-radius: 0.5rem;
+  background: var(--dark-blue);
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+
+.card h4 {
+  opacity: 0.6;
+  padding-top: 1rem;
+  font-size: var(--regular-font-size);
+}
+
+.card p {
+  color: white;
+}
+
+.card p:hover {
+  font-weight: var(--bold-font-weight);
+}
+
+.card-currencies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 1rem 0;
+}
+
+.card-currencies span {
+  text-transform: uppercase;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid white;
+  color: var(--white);
+  border-radius: 0.5rem;
+  opacity: 0.7;
+}
+
+.card-currencies span:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(0.98);
 }
