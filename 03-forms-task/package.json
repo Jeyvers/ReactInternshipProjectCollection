@@ -1,6 +1,6 @@
 {
-  "name": "05-with-auth0",
-  "homepage": "https://Jeyvers.github.io/ReactInternshipProjectCollection/tree/master/03-forms-task",
+  "name": "03-forms-task",
+  "homepage": "https://Jeyvers.github.io/kodec-03-forms-task.git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
