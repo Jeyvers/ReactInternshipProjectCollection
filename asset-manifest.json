@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ReactInternshipProjectCollection/tree/master/03-forms-task/static/css/main.abbb3bcf.css",
+    "main.js": "/ReactInternshipProjectCollection/tree/master/03-forms-task/static/js/main.7787d89c.js",
+    "index.html": "/ReactInternshipProjectCollection/tree/master/03-forms-task/index.html",
+    "main.abbb3bcf.css.map": "/ReactInternshipProjectCollection/tree/master/03-forms-task/static/css/main.abbb3bcf.css.map",
+    "main.7787d89c.js.map": "/ReactInternshipProjectCollection/tree/master/03-forms-task/static/js/main.7787d89c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abbb3bcf.css",
+    "static/js/main.7787d89c.js"
+  ]
+}
