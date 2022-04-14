@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <header>
-        <h2>Cards &#38; Currencies</h2>
+        <h2>{'Cards & Currencies'}</h2>
       </header>
       <div className=' container'>
         <div className='cards-list'>
