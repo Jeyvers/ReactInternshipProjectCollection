@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans',
+sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.users-container {
+  /* position: relative;
+  margin: auto;
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap; */
+
+    width: 90vw;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+
+.user-card {
+  padding: 1rem;
+  /* background-color: powderblue; */
+  background-color: rgba(174, 208, 227, 0.2);
+  
+}
+
+.user-card .user-website {
+
+  opacity: 0.5;
+}
+
+.user-general-info {
+  padding-top: 2.5rem;
+}
+
+.user-general-info li {
+  display: flex;
+  margin: 5px 0;
+
+ 
+}
+
+.user-general-info .email {
+  word-wrap: break-word;
+  width: 10rem;
+}
+
+.user-general-info li>:first-child {
+    opacity: 0.6;
+    min-width: 80px;
+}
+
+.user-general-info li>:nth-child(2) {
+  margin-left: 2rem;
+
+}
