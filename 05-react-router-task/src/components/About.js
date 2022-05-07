@@ -5,7 +5,6 @@ const About = ({ description, deployments, published, projects }) => {
     <section className='stats'>
       <div className='container'>
         <h3 className='stats-heading text-center my-1'>{description}</h3>
-
         <div className='grid grid-3 text-center my-4'>
           <div>
             <i className='fas fa-server fa-3x'></i>
