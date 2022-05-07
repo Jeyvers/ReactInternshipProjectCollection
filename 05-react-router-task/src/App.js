@@ -15,7 +15,7 @@ function App() {
       <div className='navbar'>
         <div className='container flex'>
           <h1 className='logo'>{easiData.name}</h1>
-          <nav>
+          <nav id='navigation'>
             <ul>
               <Link to={'/'}> Home </Link>
               <Link to={'/about'}> About </Link>
