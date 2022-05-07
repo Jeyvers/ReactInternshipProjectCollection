@@ -25,7 +25,7 @@ function App() {
         </div>
       </div>
       <Routes>
-        <Route path='/' element={<Home {...easiData} />} />
+        <Route exact path='/' element={<Home {...easiData} />} />
         <Route path='/about' element={<About {...easiData} />} />
         <Route path='/contact' element={<Contact {...easiData} />} />
       </Routes>
